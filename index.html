@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iintoo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <div class="registration">
+            <div class="logo">
+                <img src="img/logo.svg" alt="логотип">
+            </div>
+            <div class="sign-in">
+                <section class="registration-link">
+                    <h2 class="registration-link__title">Get iintoo today</h2>
+                    <p class="registration-link__description">There is no charge or obiligation upon registration</p>
+                    <div class="registration-link__links">
+                        <a href="https://www.facebook.com/" class="registration-link__with-facebook">Registr with facebook</a>
+                        <a href="https://www.linkedin.com/" class="registration-link__with-linkedIn">Registr with LinkedIn</a>
+                    </div>
+                    <p class="registration-link__or">or</p>
+
+                </section>
+                <form class="registration-form" action="iintoo.ru">
+                    <div class="registration-form__inputs">
+                        <div class="registration-form__email-wrap">
+                            <input type="email" id="email" placeholder="Email" class="registration-form__input registration-form__email">
+                        </div>
+                        <div class="registration-form__phone-wrap">
+                            <input type="tel" id="phone" placeholder="Phone" class="registration-form__input registration-form__phone">
+                        </div>
+
+                    </div>
+                    <h2 class="registration-form__title">What type of investor are you?</h2>
+                    <p class="registration-form__description">Select the type of investor your are below.</p>
+                    <div class="choice-of-investment-type">
+                        <div class="choice-of-investment-type__btns">
+                            <label class="choice-of-investment-type__btn">
+                                <span class="choice-of-investment-type__tooltip">i</span>
+                                <span>Individual</span>
+                                <input type="radio" id="radio1" name="radio" checked>
+                                <span class="choice-of-investment-type__btn-checkmark"></span>
+                            </label>
+
+                            <label class="choice-of-investment-type__btn">
+                                <span class="choice-of-investment-type__tooltip">i</span>
+                                <span>Business</span>
+                                <input type="radio" id="radio2" name="radio">
+                                <span class="choice-of-investment-type__btn-checkmark"></span>
+                            </label>
+
+                            <label class="choice-of-investment-type__btn">
+                                <span class="choice-of-investment-type__tooltip">i</span>
+                                <span>IRA</span>
+                                <input type="radio" id="radio3" name="radio">
+                                <span class="choice-of-investment-type__btn-checkmark"></span>
+                            </label>
+
+                            <label class="choice-of-investment-type__btn">
+                                <span class="choice-of-investment-type__tooltip">i</span>
+                                <span>Trust</span>
+                                <input type="radio" id="radio4" name="radio">
+                                <span class="choice-of-investment-type__btn-checkmark"></span>
+                            </label>
+                        </div>
+                        <label class="choice-of-investment-type__checkbox">
+                            <span>I agree to the terms and receving notifications from intoo <a href="ya.ru">View full items</a></span>
+                            <input type="checkbox" id="iintoo" name="iintoo"
+                                   checked>
+                            <span class="choice-of-investment-type__checkbox-checkmark"></span>
+                        </label>
+                    </div>
+                    <input class="registration-form__submit" type="submit" value="Create Account">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

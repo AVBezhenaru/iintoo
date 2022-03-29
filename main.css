@@ -1,0 +1,401 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Barlow, serif;
+  color: #2A4A5C;
+}
+
+main {
+  background: #EFF6FF;
+}
+
+.registration {
+  width: 100%;
+  height: 100%;
+  max-height: 1000px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  background-image: url(/img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 53%;
+  max-height: 1000px;
+  padding: 3%;
+}
+.logo img {
+  width: 140px;
+}
+
+.sign-in {
+  width: 47%;
+  background: #FFFFFF;
+  padding: 6% 5%;
+}
+
+.registration-link__title {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.registration-link__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.registration-link__description {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+.registration-link a {
+  width: 245px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 300;
+  padding: 11px 10px 11px 50px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.registration-link__with-facebook {
+  background: url(img/facebook.svg) no-repeat 7% 50% #255A9B;
+  background-size: 8%;
+}
+.registration-link__with-linkedIn {
+  background: url(img/linkedin.svg) no-repeat 7% 50% #0076B6;
+  background-size: 8%;
+}
+.registration-link__or {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  font-size: 11px;
+  margin-bottom: 45px;
+}
+.registration-link__or::before {
+  content: " ";
+  display: inline-block;
+  width: 20%;
+  height: 1px;
+  background: #AFAFAF;
+  position: absolute;
+  left: 27%;
+  top: 50%;
+}
+.registration-link__or::after {
+  content: " ";
+  display: inline-block;
+  width: 20%;
+  height: 1px;
+  background: #AFAFAF;
+  position: absolute;
+  right: 27%;
+  top: 50%;
+}
+
+.registration-form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.registration-form__email-wrap {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.registration-form__email-wrap::before {
+  content: "Email";
+  position: absolute;
+  color: #96A5B1;
+  font-size: 15px;
+  left: 5%;
+  top: 10%;
+  z-index: 0;
+}
+.registration-form__phone-wrap {
+  position: relative;
+  margin-right: 10px;
+}
+.registration-form__phone-wrap::before {
+  content: "Phone";
+  position: absolute;
+  color: #96A5B1;
+  font-size: 15px;
+  left: 5%;
+  top: 10%;
+  z-index: 0;
+}
+.registration-form__input {
+  width: 245px;
+  border: 1px solid #EEEEEE;
+  padding: 28px 10px 8px 10px;
+}
+.registration-form__input:focus {
+  outline: none;
+  border-left: 2px solid #3698FB;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.registration-form__input:checked ~ .checkmark:after {
+  display: block;
+}
+.registration-form__input::-webkit-input-placeholder {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.registration-form__input::-moz-placeholder {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.registration-form__input:-ms-input-placeholder {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.registration-form__input::-ms-input-placeholder {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.registration-form__input::placeholder {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.registration-form__title {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.registration-form__description {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.registration-form__submit {
+  width: 245px;
+  background: #3698FB;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.choice-of-investment-type__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 135px;
+}
+.choice-of-investment-type__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 10px;
+}
+.choice-of-investment-type__btn-checkmark {
+  width: 17px;
+  height: 17px;
+  border: 2px solid #AFAFAF;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.choice-of-investment-type__btn:hover .choice-of-investment-type__btn-checkmark {
+  border: 2px solid #3698FB;
+}
+.choice-of-investment-type__btn input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.choice-of-investment-type__btn input:checked ~ .choice-of-investment-type__btn-checkmark {
+  border: 4px solid #3698FB;
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.choice-of-investment-type__tooltip {
+  font-size: 11px;
+  color: #AFAFAF;
+  border: 1px solid #AFAFAF;
+  border-radius: 50%;
+  line-height: 9px;
+  padding: 1px 4px;
+  margin-left: 5px;
+  position: relative;
+}
+.choice-of-investment-type__tooltip:after {
+  content: "I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.";
+  position: absolute;
+  z-index: 10;
+  bottom: -100px;
+  right: -120px;
+  line-height: 16px;
+  font-size: 15px;
+  width: 240px;
+  background: #FFFFFF;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding: 12px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+.choice-of-investment-type__tooltip:hover:after {
+  opacity: 1;
+}
+.choice-of-investment-type__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+.choice-of-investment-type__checkbox-checkmark {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #AFAFAF;
+  margin-right: 10px;
+  position: relative;
+}
+.choice-of-investment-type__checkbox-checkmark:before {
+  content: "✓";
+  position: absolute;
+  top: -33%;
+  left: 0;
+  color: #FFFFFF;
+  opacity: 0;
+}
+.choice-of-investment-type__checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.choice-of-investment-type__checkbox input:checked ~ .choice-of-investment-type__checkbox-checkmark {
+  background: #3698FB;
+  border: 1px solid #3698FB;
+}
+.choice-of-investment-type__checkbox input:checked ~ .choice-of-investment-type__checkbox-checkmark:before {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.choice-of-investment-type__checkbox a {
+  color: #3698FB;
+}
+
+@media screen and (max-width: 1380px) {
+  .choice-of-investment-type__btns {
+    margin-bottom: 30px;
+  }
+  .choice-of-investment-type__btn {
+    width: 50%;
+  }
+
+  .registration-link__or {
+    width: 50%;
+  }
+  .registration-link__or:before {
+    left: 25%;
+  }
+  .registration-link__or:after {
+    right: 25%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .registration {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .sign-in {
+    width: 100%;
+  }
+
+  .registration-link__links {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .registration-form__inputs {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
